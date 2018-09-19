@@ -16,4 +16,15 @@ With the app, you can:
 This app uses The Movie Database API to retrieve movies. You must provide your own API key in order to build the app. When you get it, just paste it to: app/res/value/api_key
 
 ## Libraries
-* 
+* MVVM Pattern
+* TheMoviesDB API
+* Retrofit
+* ButterKnife
+* Picasso
+* GSON
+* Room
+* Android Lifecycle
+
+# Authors
+Yusuf Adefolahan
+ 
