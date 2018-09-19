@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context=".ui.detail.MovieDetailActivity">
+
+            <TextView
+                android:id="@+id/movie_details_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/movie_details_general_padding"
+                android:layout_marginTop="@dimen/movie_details_general_padding"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:maxLines="2"
+                android:scrollHorizontally="false"
+                android:singleLine="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textSize="@dimen/all_title_text"
+                tools:text="@string/debug_movie_details_title"/>
+
+            <include
+                android:id="@+id/movie_details_header"
+                layout="@layout/activity_movie_detail_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <include
+                android:id="@+id/movie_details_trailers"
+                layout="@layout/activity_movie_detail_trailers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <include
+                android:id="@+id/movie_details_body"
+                layout="@layout/activity_movie_detail_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <include
+                android:id="@+id/movie_details_reviews"
+                layout="@layout/activity_movie_detail_reviews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>

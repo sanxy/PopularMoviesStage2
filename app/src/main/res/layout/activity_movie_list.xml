@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/constraint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.MovieListActivity">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_movies"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero_padding"
+            android:clipToPadding="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </android.support.v7.widget.RecyclerView>
+
+
+        <ProgressBar
+            android:id="@+id/pb_loading_indicator"
+            android:layout_width="@dimen/loading_indicator_square_size"
+            android:layout_height="@dimen/loading_indicator_square_size"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/loading_indicator_margin_vertical"
+            android:layout_marginEnd="@dimen/loading_indicator_margin_lateral"
+            android:layout_marginStart="@dimen/loading_indicator_margin_lateral"
+            android:layout_marginTop="@dimen/loading_indicator_margin_vertical"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </android.support.constraint.ConstraintLayout>

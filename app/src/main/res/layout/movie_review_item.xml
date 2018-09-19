@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Review header -->
+    <TextView
+        android:id="@+id/review_header"
+        style="@style/movie_detail_text_label"
+        android:text="@string/movie_details_release_year_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <!-- Review content -->
+    <TextView
+        android:id="@+id/review_content"
+        style="@style/movie_detail_text_value"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/review_header"
+        app:layout_constraintTop_toBottomOf="@+id/review_header"
+        tools:text="@string/debug_movie_details_release_year"/>
+</android.support.constraint.ConstraintLayout>
+

@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Popular Movies</string>
+    <!-- Main activity -->
+    <!-- Sort menu strings-->
+    <string name="menu_sort_method">Sort Movies by</string>
+    <string name="menu_sort_method_popularity">Popular Movies</string>
+    <string name="menu_sort_method_rating">Top Rated Movies</string>
+    <string name="menu_sort_method_favorite_movies">Favorite Movies</string>
+    <!-- Loading indicator -->
+    <string name="loading_indicator_show">Showing loading indicator</string>
+    <string name="loading_indicator_hide">Hiding loading indicator</string>
+    <!-- MovieListCallback - mlc -->
+    <string name="mlc_onresponse_successful">List of movies has been successfully retrieved</string>
+    <string name="mlc_onresponse_failure">"List of movies could not be retrieved"</string>
+    <string name="mlc_onfailure">Error while loading from TMDB API while trying to retrieve requested movie list</string>
+    <!-- Debug strings -->
+    <string name="debug_menu_sort_method_popularity">User selected sorting the movies by popularity</string>
+    <string name="debug_menu_sort_method_rating">User selected sorting the movies by rating</string>
+    <string name="debug_menu_sort_method_user_favorites">User selected to see the favorite movie list</string>
+    <string name="debug_menu_sort_method_unknown">Sorting method selected is not yet implemented</string>
+
+    <!-- Movie details activity -->
+    <string name="movie_details_user_rating_label">User Rating</string>
+    <string name="movie_details_user_rating_over_label">/10</string>
+    <string name="movie_details_release_year_label">Release Year</string>
+    <string name="movie_details_synopsis_label">Synopsis</string>
+    <string name="movie_details_trailers_label">Trailers</string>
+    <string name="movie_details_reviews_label">Reviews</string>
+    <string name="movie_details_not_available">Movie details not available</string>
+
+    <!-- Connection -->
+    <string name="device_connected">Device is connected to Internet</string>
+    <string name="device_not_connected">Device is not connected to the Internet</string>
+
+    <!-- Debug strings -->
+    <string name="debug_movie_details_title">Movie Title</string>
+    <string name="debug_movie_details_release_year">2018</string>
+    <string name="debug_movie_details_synopsis_text">This is the description of the movie displayed in the movie detail page. Short information about the movie shown.</string>
+    <string name="debug_movie_details_user_rating">7.6</string>
+    <string name="movie_detail">Movie Details</string>
+    <string name="action_close">Dismiss</string>
+    <string name="movie_added_favorite">Movie Added To Favorites</string>
+    <string name="movie_removed_favorite">Movie Removed From Favorites</string>
+</resources>

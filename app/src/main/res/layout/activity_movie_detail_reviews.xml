@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <android.support.constraint.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/movie_details_general_padding">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/movie_details_reviews_label"
+            style="@style/movie_detail_text_label"
+            android:text="@string/movie_details_reviews_label"
+            android:textSize="@dimen/all_title_text"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:gravity="center"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/recycler_view_reviews"
+            app:layout_constraintTop_toTopOf="@+id/recycler_view_reviews"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_reviews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/recycler_view_margin"
+            android:layout_marginTop="@dimen/recycler_view_margin"
+            android:clipToPadding="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/movie_details_reviews_label">
+        </android.support.v7.widget.RecyclerView>
+    </android.support.constraint.ConstraintLayout>

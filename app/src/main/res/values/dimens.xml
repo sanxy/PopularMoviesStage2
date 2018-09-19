@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="movie_details_general_padding">8dp</dimen>
+
+    <!-- For the loading indicator -->
+    <dimen name="loading_indicator_square_size">64dp</dimen>
+    <dimen name="loading_indicator_margin_lateral">8dp</dimen>
+    <dimen name="loading_indicator_margin_vertical">8dp</dimen>
+
+    <!-- For the CardView -->
+    <dimen name="card_margin">8dp</dimen>
+    <dimen name="card_elevation">4dp</dimen>
+    <dimen name="card_title_text_size">18sp</dimen>
+    <dimen name="card_text_padding_vertical">4dp</dimen>
+
+    <!-- MovieDetailActivity -->
+    <!-- Text labels -->
+    <dimen name="movie_detail_text_label_margin_top">16dp</dimen>
+    <dimen name="movie_detail_text_label_margin_start">8dp</dimen>
+    <dimen name="movie_detail_text_label_size">12sp</dimen>
+    <!-- Text values -->
+    <dimen name="movie_detail_text_value_margin_top">8dp</dimen>
+    <dimen name="movie_detail_text_value_margin_bottom">8dp</dimen>
+    <dimen name="movie_detail_text_value_margin_start">8dp</dimen>
+    <dimen name="movie_detail_text_value_margin_end">8dp</dimen>
+    <dimen name="movie_detail_text_value_size">16sp</dimen>
+    <dimen name="all_title_text">24sp</dimen>
+    <dimen name="recycler_view_margin">8dp</dimen>
+    <dimen name="zero_padding">0dp</dimen>
+
+</resources>

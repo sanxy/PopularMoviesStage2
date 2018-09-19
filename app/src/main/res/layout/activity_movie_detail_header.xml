@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/movie_details_general_padding">
+
+        <!-- ImageView to show the movie poster -->
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/movie_details_poster"
+            style="@style/movie_detail_image_thumbnail"
+            app:layout_constraintEnd_toStartOf="@+id/movie_details_horizontal_middle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@android:drawable/ic_menu_report_image"/>
+
+        <!-- Vertical line to divide the View in two parts vertically -->
+        <android.support.constraint.Guideline
+            android:id="@+id/movie_details_horizontal_middle"
+            style="@style/invisible_guideline"
+            app:layout_constraintGuide_percent="0.5"/>
+
+        <!-- Release date label -->
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/movie_details_release_year_label"
+            style="@style/movie_detail_text_label"
+            android:text="@string/movie_details_release_year_label"
+            app:layout_constraintStart_toStartOf="@+id/movie_details_horizontal_middle"
+            app:layout_constraintTop_toTopOf="@+id/movie_details_poster"/>
+
+        <!-- Movie's release date -->
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/movie_details_release_date"
+            style="@style/movie_detail_text_value"
+            app:layout_constraintStart_toStartOf="@+id/movie_details_horizontal_middle"
+            app:layout_constraintTop_toBottomOf="@+id/movie_details_release_year_label"
+            tools:text="@string/debug_movie_details_release_year"/>
+
+        <!-- User rating label -->
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/movie_details_user_rating_label"
+            style="@style/movie_detail_text_label"
+            android:text="@string/movie_details_user_rating_label"
+            app:layout_constraintStart_toStartOf="@+id/movie_details_horizontal_middle"
+            app:layout_constraintTop_toBottomOf="@+id/movie_details_release_date"/>
+
+        <!-- Movie's user rating -->
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/movie_details_user_rating_value"
+            style="@style/movie_detail_text_value"
+            app:layout_constraintStart_toStartOf="@+id/movie_details_horizontal_middle"
+            app:layout_constraintTop_toBottomOf="@+id/movie_details_user_rating_label"
+            tools:text="@string/debug_movie_details_user_rating"/>
+
+        <!-- Movie's user rating over 10 -->
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/movie_details_user_rating_over_label"
+            style="@style/movie_detail_text_label"
+            android:text="@string/movie_details_user_rating_over_label"
+            app:layout_constraintBaseline_toBaselineOf="@+id/movie_details_user_rating_value"
+            app:layout_constraintStart_toEndOf="@+id/movie_details_user_rating_value"/>
+
+        <!-- Toggle button to add/remove this movie from the user's favorite list -->
+        <ToggleButton
+            android:id="@+id/favorite_star"
+            style="?android:attr/starStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/movie_details_general_padding"
+            app:layout_constraintStart_toStartOf="@+id/movie_details_user_rating_value"
+            app:layout_constraintTop_toBottomOf="@+id/movie_details_user_rating_value"/>
+
+    </android.support.constraint.ConstraintLayout>
