@@ -1,31 +1,19 @@
-# Popular Movies Project
+# Popular Movies Stage 2 Project 3
 
 ## Project Overview
 
-In this project, you’ll build an app to allow users to discover the most popular movies playing.
+Here is a fully functional and colorful android app which I made from scratch for Android Developer Nanodegree program. This app reveals the power of adaptive UI both for phone and tablet devices.
 
-## Stage 1
+## Features
+With the app, you can:
 
-In this stage you’ll build the core experience of your movies app.
+* Discover the most popular, the most rated or the highest rated movies
+* Save favorite movies locally to view them even when offline
+* Watch trailers
+* Read reviews
 
-You app will:
-- Present the user with a grid arrangement of movie posters upon launch.
-- Allow your user to change sort order via a setting:
--- the sort order can be by most popular or by highest-rated
-- Allow the user to tap on a movie poster and transition to a details screen with additional information such as:
--- original title
--- movie poster image thumbnail
--- a plot synopsis (called overview in the api)
--- user rating (called vote_average in the api)
--- release date
+## How to Work with the Source
+This app uses The Movie Database API to retrieve movies. You must provide your own API key in order to build the app. When you get it, just paste it to: app/res/value/api_key
 
-## What Will I Learn After Stage 1?
-
-- You will fetch data from the Internet with theMovieDB API.
-- You will use adapters and custom list layouts to populate list views.
-- You will incorporate libraries to simplify the amount of code you need to write
-
-## Required Tasks
-- Build a UI layout for multiple Activities.
-- Launch these Activities via Intent.
-- Fetch data from themovieDB API
+## Libraries
+* 
