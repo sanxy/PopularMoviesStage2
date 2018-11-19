@@ -18,11 +18,11 @@ This app uses The Movie Database API to retrieve movies. You must provide your o
 ## Libraries
 * MVVM Pattern
 * TheMoviesDB API
-* Retrofit
-* ButterKnife
-* Picasso
-* GSON
-* Room
+* [Retrofit](https://square.github.io/retrofit/)
+* [ButterKnife](http://jakewharton.github.io/butterknife/)
+* [Picasso](http://square.github.io/picasso/)
+* [Gson](https://github.com/google/gson)
+* [Room](https://developer.android.com/topic/libraries/architecture/room)
 * Android Lifecycle
 
 # Authors
